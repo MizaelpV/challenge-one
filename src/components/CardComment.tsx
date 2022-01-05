@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReply, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
-const CardComment = ({ name, date, message }) => {
-  const [count, setCount] = useState(0);
+interface Props {
+  name: string;
+  date: string;
+  message: string;
+}
+
+const CardComment: React.FC<Props> = ({ name, date, message }) => {
+  const [count, setCount] = useState<number>(0);
+
   const increaseLikes = () => {
     setCount(count + 1);
   };
