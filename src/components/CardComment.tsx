@@ -29,8 +29,8 @@ const CardComment: React.FC<Props> = ({
   };
 
   return (
-    <div className='cursor-pointer shadow-blue-100 shadow hover:shadow-blue-300 hover:shadow-sm rounded-xl pt-8 lg:px-6 w-3/5 mx-auto flex gap-4 bg-white my-5  lg:h-44'>
-      <div className='w-14  ml-3 h-28 px-3 rounded-xl flex flex-col items-center justify-around bg-sky-100 relative rigth-0'>
+    <div className='cursor-pointer shadow-blue-100 shadow hover:shadow-blue-300 hover:shadow-sm rounded-xl pt-8 lg:px-6  w-10/12 flex gap-4 bg-white my-5  lg:h-44'>
+      <div className='w-14 ml-3 h-28 px-3 rounded-xl flex flex-col items-center justify-around bg-sky-100 relative rigth-0'>
         <FontAwesomeIcon
           className='text-sky-400 hover:text-sky-500'
           icon={faPlus}
@@ -61,8 +61,8 @@ const CardComment: React.FC<Props> = ({
             <span>Reply</span>
           </div>
         </div>
-        <div className='w-11/12 mt-2 text-justify ml-4'>
-          <p className='lg:text-lg text-gray-500'>{content}</p>
+        <div className='w-11/12 pt-3 text-justify ml-4'>
+          <p className='lg:text-md text-gray-500'>{content}</p>
         </div>
       </div>
     </div>

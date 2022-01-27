@@ -8,7 +8,7 @@ const CardComment = () => {
   };
 
   return (
-    <div className='text-white text-center w-3/5 h-48 rounded-xl ml-auto mr-auto fixed inset-x-0 bottom-4 p-4 border hover:shadow-lg'>
+    <div className='text-white text-center w-3/5 h-48 rounded-xl ml-auto mr-auto inset-x-0 bottom-4 p-4 border hover:shadow-lg'>
       <div className='flex gap-3 justify-evenly ml-4 items-start h-full  mt-7'>
         <img
           className='w-11 rounded-full mr-4'

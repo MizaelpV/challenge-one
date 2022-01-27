@@ -18,14 +18,16 @@ const FeedComments = () => {
             },
           }) => {
             return (
-              <div key={id}>
-                <CardComment
-                  content={content}
-                  score={score}
-                  createdAt={createdAt}
-                  id={id}
-                  username={username}
-                />
+              <div className='w-8/12 border mx-auto'>
+                <div key={id} className='flex justify-center'>
+                  <CardComment
+                    content={content}
+                    score={score}
+                    createdAt={createdAt}
+                    id={id}
+                    username={username}
+                  />
+                </div>
               </div>
             );
           }
